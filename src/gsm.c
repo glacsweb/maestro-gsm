@@ -178,6 +178,7 @@ int GSMSendMessage(SerialPort * sp, const char * const number,
     debug(fprintf(stderr, "Sending message to number %s with text \"%s\"\n",
                           number, msg););
 
+    // ?? Not sure why this is here pjb08r 02/13
     if (debug_mode) {
         return 0;
     }

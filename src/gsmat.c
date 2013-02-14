@@ -5,7 +5,7 @@
  *                          The University of Southampton
  * DONT TRY THIS AT HOME! oonly on base with loads of execs ready!
  */
-
+ /* Warning has power script locations hard coded */
 
 #include "gsm.h"
 #include "log.h"
@@ -76,7 +76,8 @@ if( SERPutString(sp,"at\n\r") == 0) {
 				return(0);
 				}
 			}
-		system("/home/root/scripts/gprs-off");
+		system("/home/root/scripts/gprs-off"); // Change path here to migrage to
+                                                //different system
 		usleep(5000000);
 		system("/home/root/scripts/gprs-on");
 		usleep(30000000);
